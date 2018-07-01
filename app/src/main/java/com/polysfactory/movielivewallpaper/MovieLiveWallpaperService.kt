@@ -38,8 +38,8 @@ class MovieLiveWallpaperService : WallpaperService() {
                 setPlay(true)
             }
             try {
-                mp!!.setDataSource(this@MovieLiveWallpaperService, Uri.parse("http://techslides.com/demos/sample-videos/small.mp4"))
-//                    mp!!.setDataSource(this@MovieLiveWallpaperService, Uri.parse("android.resource://" + packageName + "/" + R.raw.small))
+//                mp!!.setDataSource(this@MovieLiveWallpaperService, Uri.parse("http://techslides.com/demos/sample-videos/small.mp4"))
+                mp!!.setDataSource(this@MovieLiveWallpaperService, Uri.parse("android.resource://" + packageName + "/" + R.raw.small))
             } catch (e: Exception) {
             }
         }
